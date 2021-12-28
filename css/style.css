@@ -1,0 +1,231 @@
+/* Common Command */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hidden{
+  display: none;
+}
+.flex{
+  display: flex;
+}
+a{
+  text-decoration: none;
+}
+.column{
+  flex-direction: column;
+}
+/* End Common Command */
+
+/* Start Header */
+.container-sale{
+  background-color: rgb(148, 19, 46);
+  padding: 15px 0;
+  text-align: center;
+}
+.container-sale span{
+  font-size: 20px;
+  color: #fff;
+}
+.container-sale a{
+  color: rgb(255, 213, 128);
+}
+.container-header{
+  background-color: rgb(16, 16, 16);
+}
+.general-information{
+  text-align: end;
+  font-size: 12px;
+}
+.general-information,
+nav{
+  width: 80%;
+  margin: auto;
+  background-color: rgb(16, 16, 16);
+
+}
+.general-information li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 0 10px 0;
+}
+.general-information i{
+  padding: 0 10px 0 10px;
+  color: rgb(13, 131, 211);
+  font-size: 15px;
+  vertical-align: middle;
+}
+.general-information a{
+  color: rgb(132, 131, 132);
+}
+.general-information .language{
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 2px;
+  color: #000;
+}
+.language i{
+  padding: 0 5px 0 20px;
+  font-size: 14px;
+  color: #000;
+}
+.language a{
+  color: #000;
+}
+.general-information a:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.language a:hover{
+  text-decoration: none;
+  color: #000;
+}
+nav ul li{
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px 20px 20px;
+}
+#logo img{
+  width: 100%;
+}
+#logo{
+  width: 180px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+nav ul li a{
+  color: #fff;
+  vertical-align: sub;
+}
+nav ul li  a i{
+  vertical-align: middle;
+}
+.product{
+  position: relative;
+}
+.linee{
+  padding: 0px;
+}
+
+.menu-product,
+.menu-support,
+.menu-more{
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: #f1f1f1;
+}
+.product:hover .menu-product{
+  display: block;
+}
+.arrow-right{
+  text-align: end;
+  width: 15%;
+  display: inline-block;
+}
+.arrow-right i{
+  vertical-align: middle;
+}
+.creative:hover .arrow-right i,
+.graphic:hover .arrow-right i,
+.license:hover .arrow-right i{
+  color: gray;
+}
+.menu-product li,
+.menu-creative li,
+.menu-tecnic li,
+.menu-more li,
+.menu-support li{
+  width: 100%;
+}
+.menu-product li a,
+.menu-creative li a,
+.menu-tecnic li a{
+  display: inline-block;
+  width: 80%;
+}
+.menu-product li a i,
+.menu-creative li a i,
+.menu-tecnic li a i,
+.menu-product li a,
+.menu-creative li a,
+.menu-tecnic li a{
+  vertical-align: middle;
+}
+.creative:hover .menu-creative,
+.graphic:hover .menu-tecnic,
+.license:hover .menu-license,
+.support:hover .menu-support,
+.more:hover .menu-more{
+  display: block;
+}
+.creative,
+.graphic,
+.license,
+.more,
+.support{
+  position: relative;
+}
+.menu-creative,
+.menu-tecnic,
+.menu-license{
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  background-color: #e6e6e6;
+  width: 360px;
+}
+nav li:hover{
+  background-color: #f1f1f1;
+}
+.menu-product li:hover,
+.menu-support li:hover,
+.menu-more li:hover{
+  background-color: #e6e6e6;
+}
+.menu-creative li:hover,
+.menu-tecnic li:hover,
+.menu-license li:hover{
+  background-color: #d6d6d6;
+}
+.menu-creative .title-submenu:hover{
+  background-color: #e6e6e6;
+}
+.title-submenu{
+  color: gray;
+  font-size: 12px;
+  font-weight: 600;
+
+}
+.menu-license{
+  width: 500px;
+}
+.product:hover .rotate,
+.support:hover .rotate,
+.more:hover .rotate{
+  transform: rotate(180deg);
+}
+.rotate{
+  transition: all 1s;
+}
+.menu-product li a,
+.menu-support li a,
+.menu-more li a{
+  color: #000;
+}
+.menu-product i{
+  color: gray;
+}
+.menu-product li{
+  padding-right: 0px;
+}
+.menu-creative li a,
+.menu-license li a{
+  width: 100%;
+}
+/* End Header */
+
+/* Start Main */
