@@ -439,6 +439,96 @@ strong span{
 .update a:hover{
   text-decoration: none;
 }
+.navbar-main li{
+  display: inline-block;
+  padding: 18px 10px;
+}
+.navbar-main a{
+  color: #000;
+  padding: 18px 10px;
+}
+.navbar-main{
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(230, 230, 230);
+}
+.here{
+  border-bottom: 3px solid black;
+}
+.navbar-main li:hover{
+  background-color: rgb(240, 240, 240);
+}
+.content-section{
+  text-align: center;
+  background: linear-gradient( #c35a4e 0%, #ae4c59 30%, #701148 100%);
+  padding-top: 70px;
+}
+.content-section p{
+  width: 70%;
+  margin: auto;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.content-section h1,
+.content-section p{
+  color: #fff;
+}
+.content-section h1{
+  font-size: 35px;
+  font-weight: 500;
+}
+.content-img{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  margin-top: 70px;
+  font-size: 0; 
+}
+.content-img img{
+  width: 100%;
+}
+.play{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  opacity: 0.8;
+}
+.play:hover{
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+.row-icon{
+  justify-content: center;
+  background: linear-gradient(#171717, #080808, #000);
+  padding-bottom: 70px;
+}
+.icon{
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+.icon img{
+  width: 120px;
+  height: 120px;
+  margin: 70px 0 30px 0;
+}
+.icon p{
+  width: 70%;
+  margin: 20px auto;
+  line-height: 25px;
+  font-size: 18px;
+}
+.icon p a{
+  color: #fff;
+  text-decoration: underline;
+}
+.icon p a:hover{
+  text-decoration: none;
+}
 /* End Main */
 
 /* Start MediaQuery */
@@ -610,5 +700,55 @@ strong span{
   }
   .rt a{
     text-decoration: underline;
+  }
+  .row-icon{
+    flex-direction: column;
+  }
+  .icon p{
+    width: 100%;
+    margin: 0;
+  }
+  .icon{
+    width: auto;
+    text-align: start;
+    flex-direction: row;
+    padding: 50px 0;
+  }
+  .icon img{
+    margin: 0 80px;
+    width: 80px;
+    height: 80px;
+  }
+  .content-icon{
+    margin-right: 20px;
+  }
+  .navbar-main{
+    font-size: 12px;
+  }
+  .play{
+    width: 100px;
+    height: 100px;
+  }
+  .menu-support,
+  .menu-more{
+    margin: 10px 0 0 0;
+  }
+  .content-img{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+  .navbar-main{
+    font-size: 15px;
+  }
+  .navbar-main ul li{
+    display: none;
+  }
+  .navbar-main .here{
+    display: block;
+  }
+  .play{
+    width: 80px;
+    height: 80px;
   }
 }
