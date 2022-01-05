@@ -277,7 +277,7 @@ nav li:hover{
 .product:hover a,
 .support:hover a,
 .more:hover a,
-.menu-dropdown li:hover .menu-dropdown li>a{
+.menu-dropdown li:hover a{
   color: #000;
 }
 /* End Header */
@@ -1059,6 +1059,9 @@ li h5{
   }
   .struments>.tools{
     display: none;
+  }
+  li .tools{
+    display: block;
   }
   .struments ul{
     border: none;
