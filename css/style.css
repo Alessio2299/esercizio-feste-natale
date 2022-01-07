@@ -457,6 +457,9 @@ strong span{
   align-items: center;
   justify-content: center;
   background-color: rgb(230, 230, 230);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 .here{
   border-bottom: 3px solid black;
@@ -935,6 +938,61 @@ li h5{
   .dropdown:hover .menu-dropdown{
     display: flex;
   }
+  .dropdown:hover .information-menu-hamburgher{
+    display: block;
+  }
+  .information-menu-hamburgher li{
+    display: block;
+    border: none;
+  }
+  .information-menu-hamburgher{
+    width: 100%;
+  }
+  .information-menu-hamburgher>ul{
+    margin-left: 10px;
+  }
+  .information-menu-hamburgher li i{
+  margin-right: 10px;
+  color: rgb(13, 131, 211);
+  }
+  .information-menu-hamburgher .language .rotate{
+    color: #000;
+  }
+  .information-menu-hamburgher .language{
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 0;
+  }
+  .information-menu-hamburgher a{
+    color: rgb(132, 131, 132);
+  }
+  .information-menu-hamburgher .language a{
+    color: #000;
+    padding: 0 5px;
+  }
+  .information-menu-hamburgher .language i{
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  .information-menu-hamburgher li:hover{
+    background-color: transparent;
+  }
+  .submenu-language{
+    position: static;
+    width: 150px;
+  }
+  .information-menu-hamburgher .language:hover{
+    background-color: #fff;
+    width: 78px;
+  }
+  .language:hover .submenu-language{
+    margin-top: 0;
+    border-top: 1px solid black;
+  }
   .container-main{
     display: block;
   }
@@ -1050,9 +1108,6 @@ li h5{
   .active:before{
     width: 0;
   }
-  .struments{
-    width: 90%;
-  }
   .tools img{
     border: none;
     border-radius: 5px;
@@ -1084,8 +1139,9 @@ li h5{
     width: 100%;
   }
   .company,
-  .advantages{
-    width: 95%;
+  .advantages,
+  .struments{
+    width: 90%;
   }
   .company h4,
   .advantages h4{
